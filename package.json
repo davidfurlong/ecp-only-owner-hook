@@ -1,0 +1,21 @@
+{
+    "name": "ecp-hook-token-gated",
+    "version": "0.0.1",
+    "type": "module",
+    "author": "ecp.eth",
+    "license": "MIT",
+    "files": [
+        "src/**/*.sol"
+    ],
+    "scripts": {
+        "build": "forge build --sizes --skip test",
+        "node": "anvil --block-time 2"
+    },
+    "dependencies": {
+        "@ecp.eth/protocol": "1.1.1",
+        "forge-std": "github:foundry-rs/forge-std#v1.9.6"
+    },
+    "devDependencies": {
+        "dotenv-cli": "^8.0.0"
+    }
+}
